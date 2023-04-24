@@ -9,7 +9,7 @@ function MHeader(props: any) {
   const navigate = useNavigate()
 
   const backToHome = () => {
-    navigate('/')
+    navigate('/remitano-app')
   }
 
   return (

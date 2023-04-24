@@ -10,7 +10,7 @@ function PrivateRoute({ component: Component, ...rest }: { component: React.Comp
           <Component />
         ) : (
           // @ts-ignore
-          <Navigate to={{ pathname: '/', state: { from: props.location } }} replace />
+          <Navigate to={{ pathname: '/remitano-app', state: { from: props.location } }} replace />
         )
       }
     />

@@ -39,7 +39,7 @@ const Home = () => {
   const signOut = () => {
     setSigned(false)
     removeAuthToken()
-    navigate('/')
+    navigate('/remitano-app')
   }
 
   return (
@@ -49,7 +49,7 @@ const Home = () => {
           signed ? (
             <Fragment>
               <Text>Welcome {getAuthUsername()}</Text>
-              <Button onClick={() => navigate('/share')}>Share a movie</Button>
+              <Button onClick={() => navigate('/remitano-app/share')}>Share a movie</Button>
               <Button onClick={signOut}>Logout</Button>
             </Fragment>
           ) : (

@@ -35,11 +35,11 @@ describe('MHeader', () => {
 
   it('calls useNavigate with correct parameter when home icon is clicked', () => {
     wrapper.find(IoHome).simulate('click')
-    expect(navigate).toHaveBeenCalledWith('/')
+    expect(navigate).toHaveBeenCalledWith('/remitano-app')
   })
 
   it('calls useNavigate with correct parameter when title is clicked', () => {
     wrapper.find(Title).simulate('click')
-    expect(navigate).toHaveBeenCalledWith('/')
+    expect(navigate).toHaveBeenCalledWith('/remitano-app')
   })
 })

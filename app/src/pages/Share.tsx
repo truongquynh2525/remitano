@@ -17,7 +17,7 @@ const Share = () => {
   const handleClick = async () => {
     shareVideo(HttpService(), videoUrl)
       .then(() => {
-        navigate('/')
+        navigate('/remitano-app')
         notification['success']({
           message: 'Successfully',
           description: 'Thank you for sharing the video',
@@ -34,7 +34,7 @@ const Share = () => {
 
   const signOut = () => {
     removeAuthToken()
-    navigate('/')
+    navigate('/remitano-app')
   }
 
   return (

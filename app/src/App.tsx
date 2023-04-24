@@ -9,6 +9,8 @@ function App() {
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/share" Component={Share} />
+        <Route path="/remitano-app" Component={Home} />
+        <Route path="/remitano-app/share" Component={Share} />
       </Routes>
     </Router>
   );
