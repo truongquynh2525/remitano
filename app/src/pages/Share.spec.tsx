@@ -26,7 +26,7 @@ describe('Share component', () => {
   it('should share the video when "Share" button is clicked', async () => {
     const { getByLabelText, getByText } = render(<Share />);
     const youtubeUrlInput = getByLabelText('Youtube URL');
-    const shareButton = screen.getByText('Share');
+    const shareButton = getByText('Share');
 
     fireEvent.change(youtubeUrlInput, { target: { value: 'https://www.youtube.com/watch?v=123' } });
     fireEvent.click(shareButton);

@@ -20,7 +20,7 @@ describe('Note', () => {
 
   test('renders the note details', async () => {
     const votes = [10, 2]
-    const votedStatus = VoteActions.THUMBS_UP
+    const votedStatus: any = VoteActions.THUMBS_UP || VoteActions.THUMBS_DOWN || VoteActions.UN_VOTED
     jest.fn().mockResolvedValueOnce({ data: votes })
     jest.fn().mockResolvedValueOnce({ data: votedStatus })
 
