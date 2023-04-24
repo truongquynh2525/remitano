@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd ./api && yarn dev & cd ../app && yarn dev"
+    "start": "cd ./api && yarn && yarn dev & cd ../app && yarn && yarn dev"
   },
   "keywords": [],
   "author": "",
